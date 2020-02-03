@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { SharedModule } from './shared/shared.module';
+import { MainSidurModule } from '../app/main-sidur/main-sidur.module'
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,13 +14,11 @@ const firebaseConfig = environment.firebase;
 import { AngularFirePerformanceModule } from '@angular/fire/performance';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireMessagingModule } from '@angular/fire/messaging';
-import {
-  AngularFirestoreModule,
-  FirestoreSettingsToken
-} from '@angular/fire/firestore';
-
-import { MatSliderModule } from '@angular/material/slider';
 import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule, FirestoreSettingsToken } from '@angular/fire/firestore';
+import { from } from 'rxjs';
+
+
 
 @NgModule({
   declarations: [
@@ -29,10 +30,11 @@ import { AngularFireModule } from '@angular/fire';
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireMessagingModule,
+    SharedModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSliderModule
+    MainSidurModule
   ],
   providers: [
     { provide: FirestoreSettingsToken, useValue: {} }

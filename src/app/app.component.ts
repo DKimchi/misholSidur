@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import {
+  AngularFirestore,
+  AngularFirestoreDocument
+} from '@angular/fire/firestore';
+import { map, take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +11,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'misholSidur';
+
 }

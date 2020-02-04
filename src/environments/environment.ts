@@ -5,14 +5,7 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyCklXsRPLXvlEmhWKR_a_4if5D1nfoU8Gg',
-    authDomain: 'misholsidurtest.firebaseapp.com',
-    databaseURL: 'https://misholsidurtest.firebaseio.com',
-    projectId: 'misholsidurtest',
-    storageBucket: 'misholsidurtest.appspot.com',
-    messagingSenderId: '111373818017',
-    appId: '1:111373818017:web:5de9f517b93322c7c778e0',
-    measurementId: 'G-QNKD5YWK6'
+
   }
 };
 

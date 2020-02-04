@@ -5,7 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-
+    fdsafdsa falsefdsaf
+da
+fd
+saf
+da
+fdsa
   }
 };
 
